@@ -1,38 +1,222 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+/* Utility */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.h2-pad {
+  padding: 150px 20px 0px;
+}
+
+/* Styling */
+header {
+  padding: 0px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 5px 0px;
+}
+
+.navlink ul {
+  text-decoration: none;
+  display: flex;
+  margin: auto;
+}
+
+.navlink ul li {
+  list-style: none;
+  padding: 12px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.nav-account {
+  padding: 0px 10px;
+  margin: 12px 0px;
+}
+.nav-account span {
+  padding: 0px 10px;
+  margin: 12px 0px;
+  border-left: 1px solid black;
+}
+.nav-cart {
+  border-right: 1px solid black;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.policy-parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.policy {
+  text-align: center;
+  font-size: 15px;
+  margin: 20px 20px;
+  padding: 30px 30px 50px;
+}
+.policy img {
+  margin: 20px 0px;
+}
+.coll-1 {
+  color: white;
+  align-items: center;
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  background-image: url(./assets/img-9-1.jpg);
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  background-size: contain;
+  margin: 30px;
+}
+.coll-2 {
+  color: white;
+  align-items: center;
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  background-image: url(./assets/img-9-2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 350px;
+  height: 350px;
+  margin: 30px;
+}
+.coll-3 {
+  color: white;
+  align-items: center;
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  background-image: url(./assets/img-9-3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 350px;
+  height: 350px;
+  margin: 30px;
+}
+.button-type-1 {
+  background: white;
+  width: 200px;
+  height: 50px;
+  color: black;
+  border: none;
+}
+.arrival-1 {
+  padding: 20px 50px;
+  font-size: 20px;
+}
+.arrival-text {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.arrival-1 img {
+  width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button-type-2 {
+  width: 100%;
+  height: auto;
+  padding: 15px 0px;
+  background-color: black;
   color: white;
+  transition: 0.5s ease;
+}
+.button-type-2:hover {
+  background-color: bisque;
+  color: black;
+}
+.featured-text {
+  text-align: center;
+  margin-top: 20px;
+}
+.featured-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px 0px;
+  grid-column-gap: 70px;
+  padding: 10px 50px;
+}
+.feature-img img {
+  width: 100%;
+  height: auto;
+}
+.feature-text {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 15px;
+}
+.quote-1 img {
+  width: 5%;
+}
+.quote-1 {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 50px;
+  font-weight: 200;
+  line-height: 64px;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 768px) {
+  .navlink {
+    display: none;
+  }
+  .nav-account {
+    font-size: 10px;
+  }
+  .parent-policy {
+    width: 100%;
+    height: auto;
+  }
+  .policy {
+    font-size: 10px;
+    padding: 13px;
+  }
+  .featured-text {
+    font-size: 10px;
+    text-align: center;
+    list-style: none;
+  }
+  .featured-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0px;
+    grid-row-gap: 30px;
+    padding: 10px 50px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@media only screen and (max-width:525px){
+    .navlink{
+        display: none;
+    }
+    
+    .nav-account{
+        display: none;
+        font-size: 10px;
+    }
+    .policy {
+        font-size: 10px;
+    }
+    
+ }
